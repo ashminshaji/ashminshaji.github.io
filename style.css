@@ -94,7 +94,7 @@ nav a:hover {
 }
 
 .hero-text {
-    max-width: 650px;
+    max-width: 650px;r
     font-size: 18px;
     color: #555;
     margin-bottom: 35px;
@@ -157,7 +157,7 @@ nav a:hover {
     width: 180px;
     height: 180px;
     object-fit: cover;
-    object-position: center center;
+    object-position: center 45%;
     border-radius: 50%;
     display: block;
     margin: 0 auto 25px;

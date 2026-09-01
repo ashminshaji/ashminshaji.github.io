@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ashmin Shaji | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f8fc;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 18px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 50px 8%;
+            background: white;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #2563eb;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: auto;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .buttons {
+            margin-top: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            margin: 5px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            background: #2563eb;
+            color: white;
+        }
+
+        .btn.secondary {
+            background: #111827;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            font-size: 17px;
+            color: #555;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            color: #2563eb;
+        }
+
+        .card p {
+            color: #555;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .skill {
+            background: white;
+            padding: 10px 18px;
+            border-radius: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .contact {
+            text-align: center;
+            background: #111827;
+            color: white;
+        }
+
+        .contact p {
+            margin: 10px 0;
+        }
+
+        .contact a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0b1120;
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+            nav ul {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Ashmin Shaji</div>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Hi, I'm <span>Ashmin Shaji</span></h1>
+
+        <p>
+            Final-year B.Tech Information Technology student passionate about
+            Artificial Intelligence, Machine Learning, Data Science and
+            Software Development.
+        </p>
+
+        <div class="buttons">
+            <a class="btn" href="#projects">View My Projects</a>
+
+            <a class="btn secondary"
+               href="https://github.com/ashminshaji"
+               target="_blank">
+                GitHub
+            </a>
+
+            <a class="btn secondary"
+               href="https://www.linkedin.com/in/ashmin-shaji-2b03342a4"
+               target="_blank">
+                LinkedIn
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <div class="about">
+        <p>
+            I am a final-year B.Tech Information Technology student at
+            TOC H Institute of Science and Technology. I enjoy exploring
+            emerging technologies and developing practical solutions.
+            My interests include Artificial Intelligence, Machine Learning,
+            Data Science and Software Development.
+        </p>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Featured Projects</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>🧠 CodeCompass AI</h3>
+            <p>
+                An AI-powered software intelligence platform designed to help
+                developers understand projects they have worked on for a long
+                time. It analyzes source code and project information to provide
+                useful insights and recommendations.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🎵 Emotion-Based Adaptive Music Player</h3>
+            <p>
+                A mini project that explores emotion-based music selection.
+                The system is designed to identify the user's emotional state
+                and provide a more personalized music listening experience.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>✈️ Aeroplane Management System</h3>
+            <p>
+                A software project developed to manage airline-related
+                operations such as customer management, flight booking,
+                cancellations, journey details and boarding pass generation.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🚗 Car Price Prediction</h3>
+            <p>
+                A Machine Learning and Data Science project that uses
+                available vehicle-related data to build a model for predicting
+                the price of a car.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🌸 Iris Flower Prediction</h3>
+            <p>
+                A Machine Learning classification project that predicts the
+                species of an iris flower based on its given characteristics.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🩺 Diabetes Prediction</h3>
+            <p>
+                A Machine Learning project that analyzes patient-related
+                features and predicts the possibility of diabetes using a
+                trained classification model.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">Java</div>
+        <div class="skill">Django</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">Artificial Intelligence</div>
+        <div class="skill">Data Science</div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Connect With Me</h2>
+
+    <p>
+        GitHub:
+        <a href="https://github.com/ashminshaji" target="_blank">
+            github.com/ashminshaji
+        </a>
+    </p>
+
+    <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/ashmin-shaji-2b03342a4"
+           target="_blank">
+            LinkedIn Profile
+        </a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Ashmin Shaji. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
